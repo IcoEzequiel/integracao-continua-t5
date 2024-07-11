@@ -9,7 +9,7 @@ on:
       - 'sgcmapi/**'
 
 jobs:
-  
+
   main:
     name: CI Workflow Main
     uses: ./.github/workflows/ci-backend.yml
@@ -24,5 +24,7 @@ jobs:
         uses: devmasx/merge-branch@1.4.0
         with:
           type: now
-          target-branch: main
-          github-token: ${{ github.token }}
+          target_branch: main
+          github_token: ${{ github.token }}
+
+          
