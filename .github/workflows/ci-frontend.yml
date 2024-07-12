@@ -23,7 +23,7 @@ jobs:
           with:
             node-version: '20'
         - name: Cliente Angular
-          run: rpm install -g @angular/cli@17.3.8
+          run: npm install -g @angular/cli@17.3.8
         - name: Instalação de dependeências
           working-directory: sgcmapp/
           run: npm install
